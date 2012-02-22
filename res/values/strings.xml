@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Morning-trainer</string>
+    <string name="app_name">Morning trainer</string>
+    <string name="Morning">Good Morning!!</string>
+    <string name="submit">Submit</string>
 </resources>
