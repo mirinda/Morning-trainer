@@ -3,37 +3,136 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@color/bckgrnd_color"
     >
+    <!--GOOD MORNING BLOCK-->
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <TextView
+                android:text="@string/morning_text"
+                android:textSize="39dip"
+                android:textStyle="bold"
+                android:textColor="@color/morning_color"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                />
+    </RelativeLayout>
+
+    <!--PUSH UP BLOCK-->
     <RelativeLayout
          android:layout_width="fill_parent"
          android:layout_height="wrap_content"
          >
+
         <LinearLayout android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:layout_centerHorizontal="true"
                       android:orientation="vertical"
                 >
-            <TextView
-                android:text="@string/Morning"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-             />
+            <TextView android:text="Push ups:"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="@color/text_color"
+                      android:textSize="@dimen/text_size"
+                    />
             <LinearLayout android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
                           android:orientation="horizontal"
                     >
                 <EditText android:id="@+id/push_up_edit"
-                          android:layout_width="100"
+                          android:layout_width="100dip"
                           android:layout_height="wrap_content"
+                          android:scrollHorizontally="true"
                         />
 
-                <Button android:layout_width="100"
+                <Button android:id="@+id/push_up_submit"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/submit"/>
 
             </LinearLayout>
 
+
         </LinearLayout>
     </RelativeLayout>
+
+    <!-- PRESS BLOCK-->
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:orientation="vertical"
+                >
+            <TextView android:text="Press:"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="@color/text_color"
+                      android:textSize="@dimen/text_size"
+                    />
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                    >
+                <EditText android:id="@+id/press_edit"
+                          android:layout_width="100dip"
+                          android:layout_height="wrap_content"
+                          android:scrollHorizontally="true"
+                        />
+
+                <Button android:id="@+id/press_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/submit"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--SQUAT BLOCK-->
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+        <LinearLayout android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerHorizontal="true"
+                      android:orientation="vertical"
+                >
+            <TextView android:text="Squats:"
+                      android:layout_height="wrap_content"
+                      android:layout_width="wrap_content"
+                      android:textColor="@color/text_color"
+                      android:textSize="@dimen/text_size"
+                    />
+            <LinearLayout android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                    >
+                <EditText android:id="@+id/squat_edit"
+                          android:layout_width="100dip"
+                          android:layout_height="wrap_content"
+                          android:scrollHorizontally="true"
+                        />
+
+                <Button android:id="@+id/squat_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/submit"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
 </LinearLayout>
 
