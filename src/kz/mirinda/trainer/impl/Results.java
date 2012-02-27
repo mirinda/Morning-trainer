@@ -1,5 +1,7 @@
 package kz.mirinda.trainer.impl;
 
+import android.util.Log;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -54,6 +56,12 @@ public class Results implements Serializable{
         workout1.add("push_up",100);
         workout1.add("pull_up",100);
         workout1.add("press",200);
+        Results results = new Results("mirinda");
+        results.add(workout);
+        results.add(workout1);
+        System.out.println(results.toString());
+
+
 
     }
 }
