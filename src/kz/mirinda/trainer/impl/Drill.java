@@ -14,10 +14,12 @@ public class Drill implements Serializable {
     private String drillName;
     private List<Integer> numbers = new ArrayList<Integer>();;
 
+    public Drill(){
+
+    }
     public Drill(String drillName){
         this.drillName=drillName;
     }
-
     public Drill(String drillName,int i){
         this.drillName = drillName;
         add(i);
@@ -26,17 +28,24 @@ public class Drill implements Serializable {
     public String getDrillName() {
         return drillName;
     }
-
     public void setDrillName(String drillName) {
         this.drillName = drillName;
     }
-
     public List<Integer> getNumbers() {
         return numbers;
     }
-
     public void setNumbers(List<Integer> numbers) {
         this.numbers = numbers;
+    }
+
+    public int getMaxInt(){
+        Iterator<Integer> iterator = numbers.iterator();
+        int max =0;
+        for(;iterator.hasNext();){
+           Integer i = iterator.next();
+           if(i.intValue()>max)max=i.intValue();
+        }
+        return max;
     }
     public void add(int i) {
         numbers.add(new Integer(i));

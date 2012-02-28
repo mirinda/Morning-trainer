@@ -12,7 +12,7 @@ import java.util.List;
  * @author mirinda
  */
 public class Workout implements Serializable {
-    private List<Drill> drills=new ArrayList<Drill>();  //MAP in future(DrillName : Drill)
+    private List<Drill> drills=new ArrayList<Drill>();  // TODO MAP in future(DrillName : Drill)
     private Date date;
 
     public Workout(){
@@ -22,20 +22,24 @@ public class Workout implements Serializable {
     public List<Drill> getDrills() {
         return drills;
     }
-
     public void setDrills(List<Drill> drills) {
         this.drills = drills;
     }
-
     public Date getDate() {
         return date;
     }
-
     public void setDate(Date date) {
         this.date = date;
     }
 
-
+    public Drill getDrill(String drillName){
+        Iterator<Drill> iterator = drills.iterator();
+        for(;iterator.hasNext();){
+            Drill drill= iterator.next();
+            if(drill.getDrillName().equals(drillName)) return drill;
+        }
+        return null; // TODO think null is bad >_<
+    }
     public void add(Drill drill){
         drills.add(drill);
     }
