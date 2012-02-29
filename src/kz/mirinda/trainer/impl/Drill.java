@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class Drill implements Serializable {
     private String drillName;
-    private List<Integer> numbers = new ArrayList<Integer>();;
+    private List<Integer> numbers = new ArrayList<Integer>();
 
     public Drill(){
 
@@ -43,12 +43,12 @@ public class Drill implements Serializable {
         int max =0;
         for(;iterator.hasNext();){
            Integer i = iterator.next();
-           if(i.intValue()>max)max=i.intValue();
+           if(i>max)max=i;
         }
         return max;
     }
     public void add(int i) {
-        numbers.add(new Integer(i));
+        numbers.add(i);
     }
     @Override
     public String toString(){

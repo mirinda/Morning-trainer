@@ -14,7 +14,9 @@ import java.util.List;
 public class Workout implements Serializable {
     private List<Drill> drills=new ArrayList<Drill>();  // TODO MAP in future(DrillName : Drill)
     private Date date;
-
+    public static final String PUSH_UP="push_up";
+    public static final String SQUAT="squat";
+    public static final String PRESS="press";
     public Workout(){
         date = new Date();
     }
