@@ -34,14 +34,20 @@ public class Start extends Activity implements View.OnClickListener
 
         @Override
         public CharSequence filter(CharSequence charSequence, int i, int i1, Spanned spanned, int i2, int i3) {
-            Log.i(MYTAG,"StringFilter:"+charSequence.toString());
-            return "";
+            try{
+                Integer.parseInt(charSequence.toString());
+            }catch (NumberFormatException e){
+                Log.i(MYTAG,"\""+charSequence.toString() +"\" - is not a number" );
+                return "";
+            }
+            return charSequence;
         }
     }
 
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState){
+        Log.i(MYTAG,"Activity 'Start' created");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         EditText editText;
@@ -52,11 +58,17 @@ public class Start extends Activity implements View.OnClickListener
         btn =(Button) findViewById(R.id.squat_submit);
         btn.setOnClickListener(this);
 
+        InputFilter[] inputFilters = {new DigitInputFilter()};
         editText = (EditText) findViewById(R.id.push_up_edit);
-        editText.setFilters(new InputFilter[]{new DigitInputFilter()});
+        editText.setFilters(inputFilters);
+        editText = (EditText) findViewById(R.id.press_edit);
+        editText.setFilters(inputFilters);
+        editText = (EditText) findViewById(R.id.squat_edit);
+        editText.setFilters(inputFilters);
     }
     @Override
     public void onStart(){
+        Log.i(MYTAG,"Activity 'Start' started");
         super.onStart();
         //file
         state=Environment.getExternalStorageState();
@@ -108,14 +120,18 @@ public class Start extends Activity implements View.OnClickListener
     }
     @Override
     public void onClick(View view){
+        Log.i(MYTAG,"Button clicked");
         EditText editText;
+        Button button = (Button) findViewById(view.getId());
+        button.setClickable(false);
+        button.setTextColor(getResources().getColor(R.color.morning_color));
         switch (view.getId()){
             case R.id.push_up_submit:
                 Log.i(MYTAG,"Push up");
                 pushUpSubmitted=true;
                 editText = (EditText) findViewById(R.id.push_up_edit);
                 editText.setClickable(false);
-                workout.add(Workout.PUSH_UP,Integer.parseInt(editText.getText().toString()));      //TODO inputfilter to digits
+                workout.add(Workout.PUSH_UP,Integer.parseInt(editText.getText().toString()));
                 break;
 
             case R.id.press_submit:
@@ -139,7 +155,14 @@ public class Start extends Activity implements View.OnClickListener
         if(pressSubmitted&&pushUpSubmitted&&squatSubmitted) results.add(workout);
     }
     @Override
+    public void onPause(){
+        Log.i(MYTAG,"Activity 'Start' paused");
+        super.onPause();
+        //SaveResults();
+    }
+    @Override
     public void onStop(){
+        Log.i(MYTAG,"Activity 'Start' stoped");
         super.onStop();
         SaveResults();
     }
