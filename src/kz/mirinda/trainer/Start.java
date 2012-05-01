@@ -72,7 +72,7 @@ public class Start extends Activity implements View.OnClickListener
         super.onStart();
         //file
         state=Environment.getExternalStorageState();
-        if(state.equals(Environment.MEDIA_MOUNTED)){
+        if(state.equals(Environment.MEDIA_MOUNTED)){   //TODO: MEDIA_READONLY
             // is exists folders
             File file = new File(Environment.getExternalStorageDirectory(),"morning-trainer");
 
@@ -145,7 +145,7 @@ public class Start extends Activity implements View.OnClickListener
             case R.id.squat_submit:
                 Log.i(MYTAG,"Squat");
                 squatSubmitted=true;
-                editText = (EditText) findViewById(R.id.press_edit);
+                editText = (EditText) findViewById(R.id.squat_edit);
                 editText.setClickable(false);
                 workout.add(Workout.SQUAT,Integer.parseInt(editText.getText().toString()));
                 break;
