@@ -115,7 +115,7 @@ public class Start extends Activity implements View.OnClickListener
 
 
         }else{
-            Log.e("mtrainer","External storage unavailable");
+            //Log.e("mtrainer","External storage unavailable");
         }
     }
     @Override
@@ -156,13 +156,13 @@ public class Start extends Activity implements View.OnClickListener
     }
     @Override
     public void onPause(){
-        Log.i(MYTAG,"Activity 'Start' paused");
+    	Log.i(MYTAG,"Activity 'Start' paused");
         super.onPause();
         //SaveResults();
     }
     @Override
     public void onStop(){
-        Log.i(MYTAG,"Activity 'Start' stoped");
+        Log.i(MYTAG,"Activity 'Start' stopped");
         super.onStop();
         SaveResults();
     }
@@ -181,6 +181,7 @@ public class Start extends Activity implements View.OnClickListener
             Log.e(MYTAG,"file not found "+e.getMessage());
         } catch (IOException e) {
             Log.e(MYTAG,"io exception "+e.getMessage());
+
         }
     }
 }

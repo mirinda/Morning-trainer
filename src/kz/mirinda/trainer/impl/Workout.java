@@ -12,6 +12,7 @@ import java.util.List;
  * @author mirinda
  */
 public class Workout implements Serializable {
+
     private List<Drill> drills=new ArrayList<Drill>();  // TODO MAP in future(DrillName : Drill)
     private Date date;
     public static final String PUSH_UP="push_up";
@@ -20,6 +21,7 @@ public class Workout implements Serializable {
     public Workout(){
         date = new Date();
     }
+
 
     public List<Drill> getDrills() {
         return drills;
