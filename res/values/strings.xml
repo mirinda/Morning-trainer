@@ -3,10 +3,16 @@
     <string name="app_name">Morning trainer</string>
     <string name="morning_text">Good Morning!!</string>
     <string name="submit">Submit</string>
+    <string name="train">workout now</string>
+    <string name="result">result</string>
+    <string name="new_drill">new drill</string>
 
     <dimen name="text_size">23dip</dimen>
 
     <color name= "morning_color">#FFA000</color>
+    <color name= "orange">#FFA000</color>
     <color name= "bckgrnd_color">#ff71748a</color>
     <color name= "text_color">#fffffa23</color>
+
+
 </resources>

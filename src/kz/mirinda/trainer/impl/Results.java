@@ -10,7 +10,7 @@ import java.util.List;
  * @author mirinda
  */
 public class Results implements Serializable{
-	private List<Workout> workouts= new ArrayList<Workout>();
+	private List<WorkoutModel> workoutModels = new ArrayList<WorkoutModel>();
 	private String author;
 
 	public Results(){
@@ -20,11 +20,11 @@ public class Results implements Serializable{
 		this.author = author;
 	}
 
-	public List<Workout> getWorkouts() {
-	    return workouts;
+	public List<WorkoutModel> getWorkoutModels() {
+		return workoutModels;
 	}
-	public void setWorkouts(List<Workout> workouts) {
-		this.workouts = workouts;
+	public void setWorkoutModels(List<WorkoutModel> workoutModels) {
+		this.workoutModels = workoutModels;
 	}
 	public String getAuthor() {
 		return author;
@@ -33,52 +33,37 @@ public class Results implements Serializable{
 		this.author = author;
 	}
 
-    public Workout getLastWorkout(){
-		Iterator<Workout> iterator = workouts.iterator();
-		Workout lastWorkout = null;
-		Workout workout=null;
-		for(;iterator.hasNext();){
-			if (lastWorkout== null){
-				workout=lastWorkout=iterator.next();
-			}else{
-				workout=iterator.next();
-			}
-			if(workout.getDate().after(lastWorkout.getDate())){lastWorkout=workout;}
-		}
-		return workout;
-	}
-	public  void add(Workout workout){
-		workouts.add(workout);
+	public  void add(WorkoutModel workoutModel){
+		workoutModels.add(workoutModel);
 	}
 
 	@Override
 	public String toString(){
 		String workoutString="";
-		Iterator<Workout> iterator= workouts.iterator();
+		Iterator<WorkoutModel> iterator= workoutModels.iterator();
 		for(;iterator.hasNext();){
 			workoutString+="\t"+iterator.next().toString()+"\n";
 		}
 		return author+"\n"+workoutString;
 	}
 	public  static void main(String[] args){
-		Workout workout = new Workout();
-		workout.add("push_up",100);
-		workout.add("pull_up",100);
-		workout.add("press",200);
+		WorkoutModel workoutModel = new WorkoutModel("Morning trainer");
+		workoutModel.addDrillModel("push_up");
+		workoutModel.addDrillModel("squat");
+		workoutModel.addDrillModel("press");
+
+		WorkoutModel workoutModel1 = new WorkoutModel("Home trainer");
+		workoutModel1.addDrillModel("push_up");
+		workoutModel1.addDrillModel("pull_up");
+		workoutModel1.addDrillModel("press");
 		Workout workout1 = new Workout();
 		workout1.add("push_up",100);
 		workout1.add("pull_up",100);
 		workout1.add("press",200);
 		Results results = new Results("mirinda");
-		results.add(workout);
-		results.add(workout1);
 		System.out.println(results.toString());
 
-		Workout workout2 = results.getLastWorkout();
-		System.out.println("  :"+workout2);
-		Drill drill= workout2.getDrill("push_up");
-		System.out.println("  :"+drill);
-		System.out.println("  :"+drill.getMaxInt());
+
 		/*try{
 			String userPath="D:/";
 			String SERIALIZED="serialized";

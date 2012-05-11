@@ -1,23 +1,11 @@
 package kz.mirinda.trainer;
 
 import android.app.Activity;
-import android.os.Bundle;
-import android.os.Environment;
-import android.text.InputFilter;
-import android.text.Spanned;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import kz.mirinda.trainer.impl.Results;
-import kz.mirinda.trainer.impl.Workout;
-
-import java.io.*;
-import java.util.Arrays;
 
 public class Start extends Activity implements View.OnClickListener
 {
-    private Button btn;
+   /* private Button btn;
     private String MYTAG="mirinda1";
     private String state="";
     private String appPath="" ;
@@ -44,7 +32,7 @@ public class Start extends Activity implements View.OnClickListener
         }
     }
 
-    /** Called when the activity is first created. */
+    *//** Called when the activity is first created. *//*
     @Override
     public void onCreate(Bundle savedInstanceState){
         Log.i(MYTAG,"Activity 'Start' created");
@@ -183,5 +171,10 @@ public class Start extends Activity implements View.OnClickListener
             Log.e(MYTAG,"io exception "+e.getMessage());
 
         }
-    }
+    }*/
+
+	@Override
+	public void onClick(View view) {
+		//To change body of implemented methods use File | Settings | File Templates.
+	}
 }
