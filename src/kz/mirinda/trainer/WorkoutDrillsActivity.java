@@ -16,7 +16,7 @@ import java.util.List;
  *
  * @author mirinda
  */
-public class MyDrillListActivity extends ListActivity {
+public class WorkoutDrillsActivity extends ListActivity {
 	Results results;
 	private List<String> doDrillModelList(WorkoutModel workoutModel){
 		if (workoutModel.getDrillModels() == null) {
@@ -37,8 +37,9 @@ public class MyDrillListActivity extends ListActivity {
 		results = (Results) intent.getSerializableExtra("results");
 		int i = intent.getIntExtra("workout_model",0);
 		WorkoutModel workoutModel=results.getWorkoutModels().get(i);
-
-		MyDrillAdapter drillAdapter =new MyDrillAdapter(this,doDrillModelList(workoutModel),workoutModel);
+		WorkoutDrilslAdapter drillAdapter =new WorkoutDrilslAdapter(this,doDrillModelList(workoutModel),workoutModel);
 		setListAdapter(drillAdapter);
 	}
+
+
 }

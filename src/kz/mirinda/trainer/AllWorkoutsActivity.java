@@ -9,23 +9,23 @@ import kz.mirinda.trainer.impl.Results;
 import kz.mirinda.trainer.impl.WorkoutModel;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 
 /**
- * new class
+ * Displays all the workouts provides an opportunity to create a new workout
+ * Отображает все тренировки, даёт возможность создать новую тренировку
  *
  * @author mirinda
  */
-public class MyWorkoutListActivity extends ListActivity {
+public class AllWorkoutsActivity extends ListActivity {
 	 Results results;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		results =(Results) getIntent().getSerializableExtra("results");
 		List<String> objects= doWorkoutModelList(results);
-		MyWorkoutAdapter workoutAdapter = new MyWorkoutAdapter(this,R.layout.workoutrow,R.id.wlabel, objects,results);
+		AllWorkoutsAdapter workoutAdapter = new AllWorkoutsAdapter(this,R.layout.workoutrow,R.id.wlabel, objects,results);
 		setListAdapter(workoutAdapter);
 		
 		ListView listView =getListView();
@@ -33,9 +33,7 @@ public class MyWorkoutListActivity extends ListActivity {
 	}
 	private List<String> doWorkoutModelList(Results results){
 		List<String> strings = new ArrayList<String>();
-		Iterator<WorkoutModel> iterator =results.getWorkoutModels().iterator();
-		while (iterator.hasNext()) {
-			WorkoutModel next =  iterator.next();
+		for (WorkoutModel next : results.getWorkoutModels()) {
 			strings.add(next.getWorkoutName());
 		}
 		return strings;
@@ -46,7 +44,7 @@ public class MyWorkoutListActivity extends ListActivity {
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
 		Intent intent = new Intent();
-		intent.setClass(this,MyDrillListActivity.class);
+		intent.setClass(this,WorkoutDrillsActivity.class);
 		intent.putExtra("results", results);
 		intent.putExtra("workout_model",position);
 		startActivity(intent);

@@ -15,13 +15,11 @@ import java.util.List;
  *
  * @author mirinda
  */
-public class MyWorkoutAdapter extends ArrayAdapter{
-	private Results results;
+public class AllWorkoutsAdapter extends ArrayAdapter{
 	private Context context;
 	private List objects;
-	public MyWorkoutAdapter(Context context, int resource, int textViewResourceId, List objects,Results results) {
+	public AllWorkoutsAdapter(Context context, int resource, int textViewResourceId, List objects, Results results) {
 		super(context, resource, textViewResourceId, objects);
-		this.results=results;
 		this.context=context;
 		this.objects=objects;
 	}

@@ -61,7 +61,7 @@ public class Main extends Activity implements OnClickListener{
 	@Override
 	public void onClick(View view) {
 		Intent intent= new Intent();
-		intent.setClass(this,MyWorkoutListActivity.class);
+		intent.setClass(this,AllWorkoutsActivity.class);
 		intent.putExtra("results", results);
 		startActivity(intent);
 		finish();
