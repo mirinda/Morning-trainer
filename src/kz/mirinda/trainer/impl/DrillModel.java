@@ -18,4 +18,8 @@ public class DrillModel implements Serializable{
 
     private String drillName;
 
+	@Override
+	public String toString() {
+		return  drillName ;
+	}
 }

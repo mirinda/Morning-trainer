@@ -11,6 +11,7 @@ import java.util.List;
  */
 public class Results implements Serializable{
 	private List<WorkoutModel> workoutModels = new ArrayList<WorkoutModel>();
+	private WorkoutModel oneTimeWorkoutModel= new WorkoutModel();
 	private String author;
 
 	public Results(){
@@ -20,6 +21,12 @@ public class Results implements Serializable{
 		this.author = author;
 	}
 
+	public WorkoutModel getOneTimeWorkoutModel() {
+		return oneTimeWorkoutModel;
+	}
+	public void setOneTimeWorkoutModel(WorkoutModel workoutModel) {
+		this.oneTimeWorkoutModel = workoutModel;
+	}
 	public List<WorkoutModel> getWorkoutModels() {
 		return workoutModels;
 	}
@@ -33,10 +40,15 @@ public class Results implements Serializable{
 		this.author = author;
 	}
 
-	public  void add(WorkoutModel workoutModel){
+	public void add(WorkoutModel workoutModel){
 		workoutModels.add(workoutModel);
 	}
-
+	public void addDrillModel(DrillModel drillModel){
+		oneTimeWorkoutModel.addDrillModel(drillModel);
+	}
+	public void addDrillModel(String drillString){
+		oneTimeWorkoutModel.addDrillModel(drillString);
+	}
 	@Override
 	public String toString(){
 		String workoutString="";

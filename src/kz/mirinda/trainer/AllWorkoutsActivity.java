@@ -25,7 +25,7 @@ public class AllWorkoutsActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		results =(Results) getIntent().getSerializableExtra("results");
 		List<String> objects= doWorkoutModelList(results);
-		AllWorkoutsAdapter workoutAdapter = new AllWorkoutsAdapter(this,R.layout.workoutrow,R.id.wlabel, objects,results);
+		AllWorkoutsAdapter workoutAdapter = new AllWorkoutsAdapter(this,R.layout.workoutrow,R.id.wlabel, objects);
 		setListAdapter(workoutAdapter);
 		
 		ListView listView =getListView();

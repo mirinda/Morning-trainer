@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import kz.mirinda.trainer.impl.Results;
 
 import java.util.List;
 
@@ -15,10 +14,10 @@ import java.util.List;
  *
  * @author mirinda
  */
-public class AllWorkoutsAdapter extends ArrayAdapter{
+public class AllWorkoutsAdapter extends ArrayAdapter<String>{
 	private Context context;
 	private List objects;
-	public AllWorkoutsAdapter(Context context, int resource, int textViewResourceId, List objects, Results results) {
+	public AllWorkoutsAdapter(Context context, int resource, int textViewResourceId, List<String> objects) {
 		super(context, resource, textViewResourceId, objects);
 		this.context=context;
 		this.objects=objects;

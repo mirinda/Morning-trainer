@@ -18,13 +18,14 @@
         <EditText android:id="@+id/dedit"
                   android:layout_width="match_parent"
                   android:layout_height="wrap_content"
-                  android:text="what?"
-                  android:layout_weight="10"/>
+                  android:text="0"
+                  android:layout_weight="10"
+                  android:inputType="numberDecimal"/>
         <Button android:id="@+id/dbutton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="what?"
-                android:layout_weight="10"/>/>
+                android:layout_weight="10"/>
 
 
 </LinearLayout>

@@ -3,9 +3,13 @@
     <string name="app_name">Morning trainer</string>
     <string name="morning_text">Good Morning!!</string>
     <string name="submit">Submit</string>
-    <string name="train">workout now</string>
+    <string name="train">choose workout</string>
     <string name="result">result</string>
     <string name="new_drill">new drill</string>
+    <string name="graph_title">TITS</string>
+    <string name="now">GO</string>
+    <string name="new_workout_name">New workout name</string>
+
 
     <dimen name="text_size">23dip</dimen>
 

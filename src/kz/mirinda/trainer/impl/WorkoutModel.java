@@ -11,26 +11,25 @@ import java.util.List;
  * @author mirinda
  */
 public class WorkoutModel implements Serializable {
-	List<Workout> workouts = new ArrayList<Workout>();
-
-	public List<DrillModel> getDrillModels() {
-		return drillModels;
-	}
-
-	public void setDrillModels(List<DrillModel> drillModels) {
-		this.drillModels = drillModels;
-	}
-
-	List<DrillModel> drillModels = new ArrayList<DrillModel>();
+	private List<Workout> workouts = new ArrayList<Workout>();
+	private List<DrillModel> drillModels = new ArrayList<DrillModel>();
 	private String workoutName;
+
 
 	public WorkoutModel(){}
 	public WorkoutModel(String name){
 		workoutName =name;
 	}
 
+
 	public List<Workout> getWorkouts() {
 		return workouts;
+	}
+	public void setDrillModels(List<DrillModel> drillModels) {
+		this.drillModels = drillModels;
+	}
+	public List<DrillModel> getDrillModels() {
+		return drillModels;
 	}
 	public void setWorkouts(List<Workout> workouts) {
 		this.workouts = workouts;
@@ -41,9 +40,13 @@ public class WorkoutModel implements Serializable {
 	public void setWorkoutName(String workoutName) {
 		this.workoutName = workoutName;
 	}
+
 	public void addDrillModel(String name){
 		DrillModel drillModel =  new DrillModel();
 		drillModel.setDrillName(name);
+		drillModels.add(drillModel);
+	}
+	public void addDrillModel(DrillModel drillModel){
 		drillModels.add(drillModel);
 	}
 
@@ -78,11 +81,13 @@ public class WorkoutModel implements Serializable {
 		workoutModel1.addDrillModel("squat");
 
 	}
-	
+
 	@Override
 	public String toString() {
 		return "WorkoutModel{" +
-				"workoutName='" + workoutName + '\'' +
+				"workouts=" + workouts +
+				", drillModels=" + drillModels +
+				", workoutName='" + workoutName + '\'' +
 				'}';
 	}
 }

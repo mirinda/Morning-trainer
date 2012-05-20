@@ -6,21 +6,30 @@
               android:orientation="vertical">
               <TextView android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight="1"/>
+                        android:layout_weight="11"/>
               <Button android:id="@+id/train"
                       android:layout_width="fill_parent"
                       android:layout_height="fill_parent"
-                      android:layout_weight="1"
+                      android:layout_weight="10"
                       android:text="@string/train"/>
               <TextView android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight="1"/>
+                        android:layout_weight="11"/>
               <Button android:id="@+id/result"
                       android:layout_width="fill_parent"
                       android:layout_height="fill_parent"
-                      android:layout_weight="1"
+                      android:layout_weight="10"
                       android:text="@string/result"/>
               <TextView android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
-                        android:layout_weight="1"/>
+                        android:layout_weight="11"/>
+              <Button android:id="@+id/now"
+                      android:layout_width="fill_parent"
+                      android:layout_height="fill_parent"
+                      android:layout_weight="10"
+                      android:text="@string/now"/>
+              <TextView android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="11"/>
+
 </LinearLayout>

@@ -27,6 +27,9 @@ public class Main extends Activity implements OnClickListener{
 	private Workout workout= new Workout();
 	private Button trainButton;
 	private Button resultButton;
+	private Button nowButton;
+	static final int ONE_TIME_WORKOUT=0;
+	static final int NAMES_WORKOUT=1;
 	
 	
 	@Override
@@ -35,6 +38,8 @@ public class Main extends Activity implements OnClickListener{
 		setContentView(R.layout.main1);
 		trainButton = (Button) findViewById(R.id.train);
 		resultButton= (Button) findViewById(R.id.result);
+		nowButton= (Button) findViewById(R.id.now);
+		nowButton.setOnClickListener(this);
 		//resultButton.setOnClickListener();
 		trainButton.setOnClickListener(this);
 		WorkoutModel workoutModel = new WorkoutModel("Morning trainer");
@@ -44,6 +49,12 @@ public class Main extends Activity implements OnClickListener{
 		workoutModel.addDrillModel("push_up1");
 		workoutModel.addDrillModel("squat1");
 		workoutModel.addDrillModel("press1");
+		results.addDrillModel("push_up");
+		results.addDrillModel("squat");
+		results.addDrillModel("press");
+		results.addDrillModel("press1");
+		results.addDrillModel("push_up1");
+		results.addDrillModel("squat1");
 
 
 		WorkoutModel workoutModel1 = new WorkoutModel("Home trainer");
@@ -60,10 +71,21 @@ public class Main extends Activity implements OnClickListener{
 
 	@Override
 	public void onClick(View view) {
-		Intent intent= new Intent();
-		intent.setClass(this,AllWorkoutsActivity.class);
-		intent.putExtra("results", results);
-		startActivity(intent);
-		finish();
+		if(view.getId()==R.id.train){
+			Intent intent= new Intent();
+			intent.setClass(this,AllWorkoutsActivity.class);
+			intent.putExtra("results", results);
+			startActivity(intent);
+			finish();
+		}else if(view.getId()==R.id.now){
+			Intent intent= new Intent();
+			intent.setClass(this,AllDrillsActivity.class);
+			//intent.putExtra("results", results);
+			intent.putExtra("type",ONE_TIME_WORKOUT);
+			intent.putExtra("results", results);
+			startActivity(intent);
+			finish();
+		}
+
 	}
 }

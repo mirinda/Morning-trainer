@@ -1,14 +1,11 @@
 package kz.mirinda.trainer;
 
 import android.content.Context;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
-import kz.mirinda.trainer.impl.WorkoutModel;
+import kz.mirinda.trainer.impl.Workout;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -19,13 +16,11 @@ import java.util.List;
  *
  * @author mirinda
  */
-public class WorkoutDrilslAdapter extends ArrayAdapter<String> implements View.OnClickListener,CheckBox.OnCheckedChangeListener
+public class WorkoutDrillsAdapter extends ArrayAdapter<String> implements View.OnClickListener,CheckBox.OnCheckedChangeListener
 {
-
-	private WorkoutModel workoutModel;
 	private  Context context;
 	private List<RowContainer> rowContainerList;
-
+	//TODO InputFilter On EdiText.
 	private class RowContainer{
 		public String label;
 		public int count;
@@ -38,23 +33,6 @@ public class WorkoutDrilslAdapter extends ArrayAdapter<String> implements View.O
 		public EditText editText;
 		public Button button;
 
-	}
-	private class MyTextWatcher implements TextWatcher{
-		private ViewHolder holder;
-		public MyTextWatcher(ViewHolder viewHolder){
-			holder = viewHolder;
-		}
-		@Override
-		public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
-
-		@Override
-		public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
-
-		@Override
-		public void afterTextChanged(Editable editable) {
-			Integer.getInteger(holder.editText.getText().toString());
-
-		}
 	}
 
 	private void initRowContainerList(List<String> labels){
@@ -76,13 +54,11 @@ public class WorkoutDrilslAdapter extends ArrayAdapter<String> implements View.O
 			rowContainerList.add(i++,rowContainer);
 		}
 	}
-	
-	public WorkoutDrilslAdapter(Context context, List<String> objects, WorkoutModel workoutModel) {
+
+	public WorkoutDrillsAdapter(Context context, List<String> objects) {
 		super(context, R.layout.enter_drillrow, R.id.wlabel, objects);
 		this.context =context;
-		this.workoutModel = workoutModel;
 		initRowContainerList(objects);
-
 	}
 
 	@Override
@@ -100,19 +76,6 @@ public class WorkoutDrilslAdapter extends ArrayAdapter<String> implements View.O
 			holder.button= (Button) rowView.findViewById(R.id.dbutton);
 			holder.button.setOnClickListener(this);
 			holder.editText= (EditText) rowView.findViewById(R.id.dedit);
-			holder.editText.addTextChangedListener(new TextWatcher() {
-				@Override
-				public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
-
-				@Override
-				public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
-
-				@Override
-				public void afterTextChanged(Editable editable) {
-					 //Integer(holder.editText.getText());
-					Log.i("mirinda1","i am changed : "+ editable);
-				}
-			});
 			holder.textView= (TextView) rowView.findViewById(R.id.dlabel);
 			rowView.setTag(holder);
 
@@ -124,12 +87,11 @@ public class WorkoutDrilslAdapter extends ArrayAdapter<String> implements View.O
 
 		holder.textView.setText(rowContainer.label);
 		holder.textView.setTag(position);
-		holder.editText.setText(rowContainer.count+"");
+		holder.editText.setText(rowContainer.count + "");
 		holder.checkBox.setTag(position);
 		holder.checkBox.setChecked(rowContainer.checked);
 		holder.button.setText(rowContainer.label);
-		//Object[] objects = {position,holder};
-		holder.button.setTag(position);//(objects);
+		holder.button.setTag(position);
 		//if(rowContainer.submitted)holder.button.(R.color.orange);
 
 		return rowView;
@@ -137,29 +99,40 @@ public class WorkoutDrilslAdapter extends ArrayAdapter<String> implements View.O
 
 	@Override
 	public void onClick(View view) {
-		/*Object[] objects = (Object[]) view.getTag();
-		int position =(Integer) objects[0];
-		ViewHolder holder = (ViewHolder) objects[1];*/
+		View parentView = (View) view.getParent();
+		EditText editView = (EditText) parentView.findViewById(R.id.dedit);
 		int position = (Integer)view.getTag();
 		RowContainer rowContainer = rowContainerList.get(position);
-		Log.i("mirinda1", "" + ((Button) view).getText() + " : " + position);
+		//Log.i("mirinda1", "" + ((Button) view).getText() + " : " + position);
 		if(rowContainer.checked){
 			for (RowContainer container : rowContainerList) {
 				if (container.checked) {
-					container.count = rowContainer.count;
+					String c=editView.getText().toString();
+					container.count = Integer.parseInt(c.equals("") ?"0":c); //if empty in edit text
 					container.submitted = true;
 					container.checked = false;
 				}
 			}
 		}else{
-			rowContainer.count=position;
+			String c=editView.getText().toString();
+			rowContainer.count=Integer.parseInt(c.equals("") ?"0":c);   //if empty in edit text
 			rowContainer.submitted = true;
 		}
 		notifyDataSetChanged();
 	}
+
 	@Override
 	public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
 		int position = (Integer) compoundButton.getTag();
 		rowContainerList.get(position).checked=b;
+	}
+	public Workout getWorkout(){
+		Workout workout = new Workout();
+		for(RowContainer rowContainer:rowContainerList){
+			if(rowContainer.submitted){
+				workout.add(rowContainer.label,rowContainer.count);
+			}
+		}
+		return workout;
 	}
 }
