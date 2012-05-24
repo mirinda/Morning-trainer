@@ -3,6 +3,7 @@ package kz.mirinda.trainer.impl;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -15,6 +16,20 @@ public class WorkoutModel implements Serializable {
 	private List<DrillModel> drillModels = new ArrayList<DrillModel>();
 	private String workoutName;
 
+	public class DrillContainer implements Comparable<DrillContainer>{
+		public long date;
+		public int count;
+
+		@Override
+		public String toString() {
+			return "Date:"+date+"; Count:"+count;
+		}
+
+		@Override
+		public int compareTo(DrillContainer drillContainer) {
+			return date>drillContainer.date?1:date==drillContainer.date?0:-1;
+		}
+	}
 
 	public WorkoutModel(){}
 	public WorkoutModel(String name){
@@ -90,4 +105,32 @@ public class WorkoutModel implements Serializable {
 				", workoutName='" + workoutName + '\'' +
 				'}';
 	}
+
+	public List<String> doDrillModelList(){
+		if (getDrillModels() == null) {
+			return new ArrayList<String>();
+		}
+		List<String> stringList =new ArrayList<String>(getDrillModels().size());
+		for (DrillModel drillModel : getDrillModels()) {
+			stringList.add(drillModel.getDrillName());
+		}
+		return stringList;
+	}
+
+	public List<DrillContainer> getAllInfOfDrill(int position) {
+		List<DrillContainer> drillContainers = new LinkedList<DrillContainer>();
+		DrillModel drillModel = drillModels.get(position);
+		DrillContainer drillContainer = new DrillContainer();
+		for(Workout workout:workouts){
+			int t = workout.findDrill(drillModel);
+			if(t == 0) continue;
+		   	drillContainer.count = t;
+			drillContainer.date = workout.getDate().getTime();
+			drillContainers.add(drillContainer);
+			drillContainer = new DrillContainer();
+		}
+		return drillContainers;
+	}
+
+
 }

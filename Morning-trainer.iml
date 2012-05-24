@@ -24,6 +24,7 @@
         <option name="RUN_PROGUARD" value="false" />
         <option name="PROGUARD_CFG_PATH" value="/proguard.cfg" />
         <resOverlayFolders />
+        <includeSystemProguardFile>false</includeSystemProguardFile>
       </configuration>
     </facet>
   </component>
@@ -36,6 +37,7 @@
     <orderEntry type="jdk" jdkName="Android 2.3.3 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="GraphView-2.0" level="project" />
+    <orderEntry type="library" name="GraphView-2.5" level="project" />
   </component>
 </module>
 

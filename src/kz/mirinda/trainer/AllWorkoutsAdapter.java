@@ -33,7 +33,7 @@ public class AllWorkoutsAdapter extends ArrayAdapter<String>{
 		WHolder holder;
 		if(rowView == null){
 			LayoutInflater layoutInflater =(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			rowView = layoutInflater.inflate(R.layout.workoutrow,parent,false);
+			rowView = layoutInflater.inflate(R.layout.all_workouts_row,parent,false);
 			holder = new WHolder();
 			holder.textView =(TextView) rowView.findViewById(R.id.wlabel);
 			rowView.setTag(holder);

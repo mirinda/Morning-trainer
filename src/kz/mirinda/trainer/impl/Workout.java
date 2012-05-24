@@ -15,7 +15,7 @@ public class Workout implements Serializable {
 
     private List<Drill> drills=new ArrayList<Drill>();  // TODO MAP in future(DrillName : Drill)
     private Date date;
-    public static final String PUSH_UP="push_up";
+    public static final String PUSH_UP="push_up";    //TODO dell lasts names
     public static final String SQUAT="squat";
     public static final String PRESS="press";
     public Workout(){
@@ -69,4 +69,11 @@ public class Workout implements Serializable {
         workout.add("press",200);
         System.out.println(workout.toString());
     }*/
+
+	public int findDrill(DrillModel drillModel) {
+		for (Drill drill : drills) {
+			if(drill.getDrillName().equals(drillModel.getDrillName())) return drill.getNumbers().get(0);
+		}
+		return 0;
+	}
 }

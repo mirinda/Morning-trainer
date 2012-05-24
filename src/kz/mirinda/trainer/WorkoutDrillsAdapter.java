@@ -130,7 +130,7 @@ public class WorkoutDrillsAdapter extends ArrayAdapter<String> implements View.O
 		Workout workout = new Workout();
 		for(RowContainer rowContainer:rowContainerList){
 			if(rowContainer.submitted){
-				workout.add(rowContainer.label,rowContainer.count);
+				if(rowContainer.count!=0)workout.add(rowContainer.label,rowContainer.count);
 			}
 		}
 		return workout;

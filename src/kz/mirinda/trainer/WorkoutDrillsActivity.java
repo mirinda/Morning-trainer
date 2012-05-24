@@ -3,9 +3,12 @@ package kz.mirinda.trainer;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import kz.mirinda.trainer.impl.DrillModel;
 import kz.mirinda.trainer.impl.Results;
+import kz.mirinda.trainer.impl.Workout;
 import kz.mirinda.trainer.impl.WorkoutModel;
+import kz.mirinda.trainer.saver.Saver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +21,8 @@ import java.util.List;
 public class WorkoutDrillsActivity extends ListActivity {
 
 	private WorkoutModel workoutModel;
+	private Results results;
+	private int type;
 
 	private List<String> doDrillModelList(WorkoutModel workoutModel){
 		if (workoutModel.getDrillModels() == null) {
@@ -35,8 +40,9 @@ public class WorkoutDrillsActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.enter_drill);
 		Intent intent =getIntent();
-		Results results = (Results) intent.getSerializableExtra("results");
-		if(intent.getIntExtra("type",Main.NAMES_WORKOUT)==Main.NAMES_WORKOUT){
+		results = (Results) intent.getSerializableExtra("results");
+		type = intent.getIntExtra("type",Main.NAMES_WORKOUT);
+		if(type==Main.NAMES_WORKOUT){
 			int i = intent.getIntExtra("workout_model",0);
 			workoutModel= results.getWorkoutModels().get(i);
 		}else{
@@ -49,8 +55,12 @@ public class WorkoutDrillsActivity extends ListActivity {
 	@Override
 	public void onBackPressed() {
 		WorkoutDrillsAdapter drillsAdapter =(WorkoutDrillsAdapter) getListAdapter();
-		workoutModel.add(drillsAdapter.getWorkout());
-		//Log.i("mirinda1", "" +workoutModel.toString()); //TODO save all results here.
+		Workout workout = drillsAdapter.getWorkout();
+		if(type==Main.NAMES_WORKOUT)workoutModel.add(workout);
+		results.getOneTimeWorkoutModel().add(workout);
+		Saver.saveResults(results);
+		Log.i("mirinda1", "" + results.toString());
+		Log.i("mirinda1","export results from WorkoutDrills");
 		super.onBackPressed();
 	}
 
