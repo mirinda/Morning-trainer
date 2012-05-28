@@ -7,9 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
-import android.widget.ListView;
+import android.widget.*;
 import com.jjoe64.graphview.GraphView;
 import com.jjoe64.graphview.LineGraphView;
 import kz.mirinda.trainer.impl.Results;
@@ -26,10 +24,11 @@ import java.util.List;
  *
  * @author mirinda
  */
-public class ResultsActivity extends ListActivity implements View.OnClickListener{
+public class ResultsActivity extends ListActivity implements View.OnClickListener, AdapterView.OnItemLongClickListener {
 
-	private final String TIME_FORMAT_HOUR = "dd.MM hh:mm";
-	private final String TIME_FORMAT_YEAR = "dd.MM.yy";
+	public static final String TIME_FORMAT_HOUR = "dd.MM kk:mm";
+	public static final String TIME_FORMAT_YEAR = "dd.MM.yy";
+	public static final String TIME_FORMAT_ALL = "dd.MM.yy kk:mm:ss";
 	private final long millSecOfDay = 24*60*60*1000;
 
 	private MyGraphView graphView;
@@ -54,6 +53,7 @@ public class ResultsActivity extends ListActivity implements View.OnClickListene
 			}
 			return ""+value;
 		}
+
 	}
 
 	public void onCreate(Bundle savedInstanceState) {
@@ -64,12 +64,12 @@ public class ResultsActivity extends ListActivity implements View.OnClickListene
 		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, results.getOneTimeWorkoutModel().doDrillModelList());
 		setListAdapter(arrayAdapter);
 	}
-
 	private void setMyContextView(){
 		linearLayout = new LinearLayout(this);
 		linearLayout.setOrientation(LinearLayout.VERTICAL);
 		listView = new ListView(this);
 		listView.setId(android.R.id.list);
+		listView.setOnItemLongClickListener(this);
 		linearLayout.addView(listView,new LinearLayout.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT,10));
 		initGraphView();
 		linearLayout.addView(graphView,new LinearLayout.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT,11));
@@ -89,7 +89,7 @@ public class ResultsActivity extends ListActivity implements View.OnClickListene
 	private void initGraphViewFromPosition(int position) {
 		//get all  pair date and count from drill on position
 		WorkoutModel allWorkoutModel = results.getOneTimeWorkoutModel();
-		List<WorkoutModel.DrillContainer> drillContainers = allWorkoutModel.getAllInfOfDrill(position);
+		List<WorkoutModel.DrillContainer> drillContainers = allWorkoutModel.getInfOfDrill(position);
 		Collections.sort(drillContainers);
 
 
@@ -118,7 +118,6 @@ public class ResultsActivity extends ListActivity implements View.OnClickListene
 		graphView.addSeries(lastGraphViewSeries);
 		graphView.invalidate();//refresh view
 	}
-
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		super.onListItemClick(l, v, position, id);
@@ -126,6 +125,17 @@ public class ResultsActivity extends ListActivity implements View.OnClickListene
 	}
 
 
+	@Override
+	public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
+		Intent intent= new Intent();
+		intent.setClass(this,AllDrillsOfDrillmodelActivity.class);
+		intent.putExtra("results",results);
+		TextView textView = (TextView) view.findViewById(android.R.id.text1);
+		intent.putExtra("drillName",textView.getText().toString());
+		intent.putExtra("position",i);
+		startActivity(intent);
+		return false;  //To change body of implemented methods use File | Settings | File Templates.
+	}
 
 	@Override
 	public void onClick(View view) {

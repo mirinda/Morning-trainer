@@ -56,7 +56,7 @@ public class WorkoutDrillsAdapter extends ArrayAdapter<String> implements View.O
 	}
 
 	public WorkoutDrillsAdapter(Context context, List<String> objects) {
-		super(context, R.layout.enter_drillrow, R.id.wlabel, objects);
+		super(context, R.layout.enter_drill_row, R.id.wlabel, objects);
 		this.context =context;
 		initRowContainerList(objects);
 	}
@@ -68,7 +68,7 @@ public class WorkoutDrillsAdapter extends ArrayAdapter<String> implements View.O
 
 		if (rowView == null) {
 			LayoutInflater layoutInflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			rowView = layoutInflater.inflate(R.layout.enter_drillrow,parent,false);
+			rowView = layoutInflater.inflate(R.layout.enter_drill_row,parent,false);
 
 			holder = new ViewHolder();
 		   	holder.checkBox =(CheckBox) rowView.findViewById(R.id.dbox);

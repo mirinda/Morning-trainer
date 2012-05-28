@@ -56,7 +56,7 @@ public class Results implements Serializable{
 		for(;iterator.hasNext();){
 			workoutString+="\t"+iterator.next().toString()+"\n";
 		}
-		return author+"\n"+workoutString;
+		return author+"\n"+workoutString+"One Time Workout:"+oneTimeWorkoutModel.toString();
 	}
 	public  static void main(String[] args){
 		WorkoutModel workoutModel = new WorkoutModel("Morning trainer");

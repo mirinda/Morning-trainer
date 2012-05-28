@@ -9,6 +9,11 @@
     <string name="graph_title">TITS</string>
     <string name="now">GO</string>
     <string name="new_workout_name">New workout name</string>
+    <string name="maximum">Maximum:</string>
+    <string name="all">All:</string>
+    <string name="enter_drill_name">Enter drill name:</string>
+    <string name="create_drill">Create drill</string>
+
 
 
     <dimen name="text_size">23dip</dimen>

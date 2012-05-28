@@ -30,5 +30,6 @@
         <activity android:name=".AllDrillsActivity"
                   android:theme="@android:style/Theme.Black.NoTitleBar"
                   android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".AllDrillsOfDrillmodelActivity"/>
     </application>
 </manifest> 

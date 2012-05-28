@@ -30,7 +30,10 @@ public class WorkoutModel implements Serializable {
 			return date>drillContainer.date?1:date==drillContainer.date?0:-1;
 		}
 	}
-
+	public class AllInfDrillContainer extends DrillContainer{
+		public String workoutModelName;
+		public String drillName;
+	}
 	public WorkoutModel(){}
 	public WorkoutModel(String name){
 		workoutName =name;
@@ -117,9 +120,9 @@ public class WorkoutModel implements Serializable {
 		return stringList;
 	}
 
-	public List<DrillContainer> getAllInfOfDrill(int position) {
+	public List<DrillContainer> getInfOfDrill(int position) {
 		List<DrillContainer> drillContainers = new LinkedList<DrillContainer>();
-		DrillModel drillModel = drillModels.get(position);
+		DrillModel drillModel = drillModels.isEmpty()?null:drillModels.get(position);
 		DrillContainer drillContainer = new DrillContainer();
 		for(Workout workout:workouts){
 			int t = workout.findDrill(drillModel);

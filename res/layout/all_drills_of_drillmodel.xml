@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:layout_weight="9"
+                  >
+        <TextView android:id="@+id/add_max"
+                  android:layout_width="wrap_content"
+                  android:layout_height="fill_parent"
+                  android:text="@string/maximum"
+                  android:layout_marginLeft="10dip"
+                  android:layout_centerVertical="true"
+                  android:textSize="@dimen/text_size"
+                />
+        <TextView android:id="@+id/add_max_count"
+                  android:layout_width="wrap_content"
+                  android:layout_toRightOf="@id/add_max"
+                  android:layout_height="fill_parent"
+                  android:layout_centerVertical="true"
+                  android:textSize="@dimen/text_size"
+                />
+        <TextView android:id="@+id/add_all"
+                  android:layout_width="wrap_content"
+                  android:layout_height="fill_parent"
+                  android:layout_toRightOf="@id/add_max_count"
+                  android:layout_marginLeft="40dip"
+                  android:text="@string/all"
+                  android:layout_centerVertical="true"
+                  android:textSize="@dimen/text_size"
+                />
+        <TextView android:id="@+id/add_all_count"
+                  android:layout_width="wrap_content"
+                  android:layout_height="fill_parent"
+                  android:layout_toRightOf="@id/add_all"
+                  android:layout_centerVertical="true"
+                  android:textSize="@dimen/text_size"
+                />
+
+    </RelativeLayout>
+    <ListView android:id="@android:id/list"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:layout_weight="1"/>
+
+</LinearLayout>

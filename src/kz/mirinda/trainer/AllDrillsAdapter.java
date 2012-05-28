@@ -57,6 +57,10 @@ public class AllDrillsAdapter extends ArrayAdapter<String> implements CheckBox.O
 		 }
 		return workoutModel1;
 	}
+	public void addObject(String s){
+		objects.add(s);
+		checked.add(new BooleanContainer(false));
+	}
 
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
