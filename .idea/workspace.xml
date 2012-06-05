@@ -21,58 +21,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ea6a9c0-922d-4a03-952e-d5b7df6c07da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/Morning-trainer.apk.res" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/Morning-trainer.apk.unaligned" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/Morning-trainer.apk" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/classes.dex" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/AllWorkoutsActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/AllWorkoutsAdapter$WHolder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/AllWorkoutsAdapter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/R$anim.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/R$attr.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/R$color.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/R$dimen.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/R$drawable.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/R$id.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/R$layout.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/R$string.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/R.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/ResultsActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/Start.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/WorkoutDrillsActivity.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/WorkoutDrillsAdapter$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/WorkoutDrillsAdapter$RowContainer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/WorkoutDrillsAdapter$ViewHolder.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/WorkoutDrillsAdapter.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/draw/DrawView.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/impl/Drill.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/impl/DrillModel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/impl/Results.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/impl/Workout.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Morning-trainer/kz/mirinda/trainer/impl/WorkoutModel.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/res-cache/Morning-trainer/drawable-hdpi/ball.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/res-cache/Morning-trainer/drawable-hdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/res-cache/Morning-trainer/drawable-ldpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/res-cache/Morning-trainer/drawable-mdpi/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/res-cache/Morning-trainer/drawable/app_icon.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/alert_new_drill.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/all_drills_of_drillmodel.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/all_drills_of_drillmodel_row.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/kz/mirinda/trainer/R.java" afterPath="$PROJECT_DIR$/gen/kz/mirinda/trainer/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/all_drills.xml" afterPath="$PROJECT_DIR$/res/layout/all_drills.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/all_drills_row.xml" afterPath="$PROJECT_DIR$/res/layout/all_drills_row.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsActivity.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsAdapter.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsAdapter.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/impl/Results.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/impl/Results.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/impl/WorkoutModel.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/impl/WorkoutModel.java" />
-      <change type="MOVED" beforePath="D:\Users\make\IdeaProjects\Morning-trainer\res\layout\enter_drillrow.xml" afterPath="$PROJECT_DIR$/res/layout/enter_drill_row.xml" />
     </list>
     <ignored path="Morning-trainer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -142,8 +91,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -151,89 +100,7 @@
     <favorites_list name="Morning-trainer" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="AllDrillsOfDrillmodelActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="62" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultsActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="59" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkoutModel.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/impl/WorkoutModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="59" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all_workouts.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/all_workouts.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all_workouts_row.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/all_workouts_row.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="40" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enter_drill_row.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/enter_drill_row.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="58" selection-start="520" selection-end="520" vertical-scroll-proportion="0.40215054">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all_drills_of_drillmodel_row.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/all_drills_of_drillmodel_row.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="48" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllWorkoutsActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllWorkoutsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="60" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkoutDrillsAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="19" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -555,10 +422,82 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Morning-trainer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Morning-trainer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Morning-trainer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Problems" />
+        <subPane subId="Production">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Tests" />
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Morning-trainer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Morning-trainer">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT=".idea">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Morning-trainer">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -571,30 +510,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Morning-trainer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Morning-trainer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Morning-trainer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Morning-trainer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Morning-trainer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -614,9 +529,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -707,24 +622,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" value="kz.mirinda.trainer.kz.mirinda.trainer.impl.Workout" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="file://$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -750,6 +647,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" value="kz.mirinda.trainer.kz.mirinda.trainer.impl.Workout" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="file://$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -887,7 +802,11 @@
       <created>1337853398828</created>
       <updated>1337853398828</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="добавлена возможность добавлять упражнения и просматривать число сделанных упражнений">
+      <created>1338206672125</created>
+      <updated>1338206672125</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -914,11 +833,10 @@
     <frame x="-4" y="-4" width="1688" height="1025" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3552941" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3552941" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.38836104" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3181818" sideWeight="0.6447059" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.38836104" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.38836104" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39904988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42755345" sideWeight="0.50061727" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.21852732" order="2" side_tool="true" content_ui="tabs" />
@@ -926,11 +844,12 @@
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52705884" sideWeight="0.49506173" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32779098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.6710214" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.6710214" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.6900238" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20577395" sideWeight="0.6447059" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20577395" sideWeight="0.6447059" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2482353" sideWeight="0.49506173" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3181818" sideWeight="0.6447059" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705882" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -977,7 +896,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Нормально выглядит графическая либа" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлена возможность добавлять упражнения и просматривать число сделанных упражнений" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1005,6 +924,7 @@
     <MESSAGE value="bug with bad listview . Is about version &#10;sdk in manifest" />
     <MESSAGE value="activity - list of all drills.Осталось связать некоторые кнопочки, и доделать Results" />
     <MESSAGE value="Нормально выглядит графическая либа" />
+    <MESSAGE value="добавлена возможность добавлять упражнения и просматривать число сделанных упражнений" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1049,40 +969,6 @@
         <state line="14" column="15" selection-start="640" selection-end="640" vertical-scroll-proportion="0.3001261" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="62" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="59" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/impl/WorkoutModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="59" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/all_workouts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/all_workouts_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="40" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/enter_drill_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="58" selection-start="520" selection-end="520" vertical-scroll-proportion="0.40215054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/all_drills_of_drillmodel_row.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="48" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" />
@@ -1093,9 +979,41 @@
         <state line="34" column="60" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/enter_drill_row.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="26" selection-start="390" selection-end="390" vertical-scroll-proportion="0.32903227" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/all_workouts_row.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="40" selection-start="484" selection-end="484" vertical-scroll-proportion="0.54214126" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/all_workouts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/impl/WorkoutModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="59" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.2729124">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="59" selection-start="788" selection-end="788" vertical-scroll-proportion="0.032882012" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="19" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.0" />
+        <state line="120" column="19" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.21083172" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="62" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.032882012" />
       </provider>
     </entry>
   </component>
