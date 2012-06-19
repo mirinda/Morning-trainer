@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import kz.mirinda.trainer.impl.Results;
-import kz.mirinda.trainer.saver.Saver;
 
 /**
  * new class
@@ -18,18 +17,13 @@ import kz.mirinda.trainer.saver.Saver;
  */
 public class Main extends Activity implements OnClickListener{
 
-	private String user = "mirinda";
+	public static String user = "mirinda";
 	private Results results;
 	private Button trainButton;
 	private Button resultButton;
 	private Button nowButton;
 	static final int ONE_TIME_WORKOUT=0;
 	static final int NAMES_WORKOUT=1;
-
-
-
-
-
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -42,9 +36,6 @@ public class Main extends Activity implements OnClickListener{
 		nowButton.setOnClickListener(this);
 		resultButton.setOnClickListener(this);
 		trainButton.setOnClickListener(this);
-		Saver.setUser(user);
-		//if(Saver.initResults(results)){
-		 /**/
 	}
 
 	@Override
@@ -52,20 +43,17 @@ public class Main extends Activity implements OnClickListener{
 		if(view.getId()==R.id.train){
 			Intent intent= new Intent();
 			intent.setClass(this,AllWorkoutsActivity.class);
-			intent.putExtra("results", results);
 			startActivity(intent);
 			//finish();
 		}else if(view.getId()==R.id.now){
 			Intent intent= new Intent();
 			intent.setClass(this,AllDrillsActivity.class);
 			intent.putExtra("type",ONE_TIME_WORKOUT);
-			intent.putExtra("results", results);
 			startActivity(intent);
 			//finish();
 		} else if(view.getId()==R.id.result){
 			Intent intent = new Intent();
 			intent.setClass(this,ResultsActivity.class);
-			intent.putExtra("results",results);
 			startActivity(intent);
 			//finish();
 
@@ -74,42 +62,18 @@ public class Main extends Activity implements OnClickListener{
 	}
 	@Override
 	protected void onStop() {
-		super.onStop();
-		Saver.saveResults(results);
-		Log.i("mirinda1","export file from main");
 		Log.i("mirinda1","Main.onStop");
+		super.onStop();
+		//Saver.saveResults(results);
+		Log.i("mirinda1","export file from main");
 	}
 
 	@Override
 	protected void onStart() {
-		super.onStart();
-		if((results =Saver.initResults()) != null){Log.i("mirinda1","import file from main");
-			/*WorkoutModel workoutModel = new WorkoutModel("Morning trainer");
-			workoutModel.addDrillModel("push_up");
-			workoutModel.addDrillModel("squat");
-			workoutModel.addDrillModel("press");
-			workoutModel.addDrillModel("push_up1");
-			workoutModel.addDrillModel("squat1");
-			workoutModel.addDrillModel("press1");
-			results.addDrillModel("push_up");
-			results.addDrillModel("squat");
-			results.addDrillModel("press");
-			results.addDrillModel("press1");
-			results.addDrillModel("push_up1");
-			results.addDrillModel("squat1");
-
-
-			WorkoutModel workoutModel1 = new WorkoutModel("Home trainer");
-			workoutModel1.addDrillModel("push_up");
-			workoutModel1.addDrillModel("pull_up");
-			workoutModel1.addDrillModel("press");
-			Workout workout1 = new Workout();
-			workout1.add("push_up",100);
-			workout1.add("pull_up",100);
-			workout1.add("press",200);
-			results.add(workoutModel);
-			results.add(workoutModel1);*/
-		}
 		Log.i("mirinda1","Main.onStart");
+		super.onStart();
+		if((results =TrainerApplication.getResults()) != null)Log.i("mirinda1","import file from main");
+
+
 	}
 }

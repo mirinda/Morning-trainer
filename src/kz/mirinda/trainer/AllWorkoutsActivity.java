@@ -46,7 +46,6 @@ public class AllWorkoutsActivity extends ListActivity implements Button.OnClickL
 		super.onListItemClick(l, v, position, id);
 		Intent intent = new Intent();
 		intent.setClass(this,WorkoutDrillsActivity.class);
-		intent.putExtra("results", results);
 		intent.putExtra("workout_model",position);
 		startActivity(intent);
 		finish();

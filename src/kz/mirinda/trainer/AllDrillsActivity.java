@@ -26,7 +26,6 @@ public class AllDrillsActivity extends ListActivity implements Button.OnClickLis
 	private Results results;
 	private int type;
 	private EditText editText;
-	private AllDrillsActivity.MyDialogListener myDialogListener;
 	private AllDrillsAdapter allDrillsAdapter;
 
 	private class MyDialogListener implements DialogInterface.OnClickListener{
@@ -53,6 +52,7 @@ public class AllDrillsActivity extends ListActivity implements Button.OnClickLis
 		}
 
 	}
+
 	private List<String> doDrillModelList(WorkoutModel workoutModel) {
 		if (workoutModel.getDrillModels() == null) {
 			return new ArrayList<String>();
@@ -64,6 +64,7 @@ public class AllDrillsActivity extends ListActivity implements Button.OnClickLis
 		return stringList;
 	}
 
+	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_drills);
@@ -76,21 +77,19 @@ public class AllDrillsActivity extends ListActivity implements Button.OnClickLis
 		button1.setOnClickListener(this);
 
 		editText = (EditText) findViewById(R.id.ald_text);
-		results = (Results) intent.getSerializableExtra("results");
+		results = TrainerApplication.getResults();
 		type = intent.getIntExtra("type", Main.ONE_TIME_WORKOUT);
 		if (type == Main.ONE_TIME_WORKOUT) editText.setVisibility(View.GONE);
 
 		allDrillsAdapter = new AllDrillsAdapter(this, R.layout.all_drills, R.id.aldr_textview, doDrillModelList(results.getOneTimeWorkoutModel()), results.getOneTimeWorkoutModel());
 		setListAdapter(allDrillsAdapter);
 	}
-
 	@Override
 	public void onClick(View view) {
 		switch (view.getId()) {
 			case R.id.ald_button:
 				AllDrillsAdapter allDrillsAdapter = (AllDrillsAdapter) getListAdapter();
 				Intent intent = new Intent();
-				intent.putExtra("results", results);
 				intent.putExtra("type", type);
 				WorkoutModel workoutModel = allDrillsAdapter.getOneTimeWorkout();
 				if (type == Main.NAMES_WORKOUT) {
@@ -105,15 +104,15 @@ public class AllDrillsActivity extends ListActivity implements Button.OnClickLis
 				break;
 			case R.id.ald_new_drill:
 				LayoutInflater layoutInflater = LayoutInflater.from(this);
-				View view1 = layoutInflater.inflate(R.layout.alert_new_drill,null);
+				View view1 = layoutInflater.inflate(R.layout.alert_new_drill,null);     //TODO плохое обращение с диалогом использовать onPreparedDialog
 
 				AlertDialog.Builder builder= new AlertDialog.Builder(this);
 				builder.setTitle(getString(R.string.create_drill));
 				builder.setView(view1);
 
-				 myDialogListener = new MyDialogListener(view1);
-				builder.setPositiveButton(android.R.string.ok,myDialogListener);
-				builder.setNegativeButton(android.R.string.cancel,myDialogListener);
+				MyDialogListener myDialogListener = new MyDialogListener(view1);
+				builder.setPositiveButton(android.R.string.ok, myDialogListener);
+				builder.setNegativeButton(android.R.string.cancel, myDialogListener);
 
 				AlertDialog alertDialog = builder.create();
 				alertDialog.show();

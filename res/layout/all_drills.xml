@@ -14,10 +14,9 @@
         <EditText android:id="@+id/ald_text"
                   android:layout_height="50dp"
                   android:layout_width="200dp"
-
-                  android:hint="new_name"
                   android:layout_below="@id/ald_text"
-                  android:layout_centerVertical="true"/>
+                  android:layout_centerVertical="true"
+                  android:inputType="text"/>
 
         <Button android:id="@+id/ald_button"
                 android:layout_height="50dp"

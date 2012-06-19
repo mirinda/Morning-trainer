@@ -49,7 +49,7 @@ public class AllDrillsOfDrillmodelActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_drills_of_drillmodel);
 		Intent intent = getIntent();
-		results = (Results) intent.getSerializableExtra("results");
+		results = TrainerApplication.getResults();
 		drillName = intent.getStringExtra("drillName");
 		allWorkoutModel =  results.getOneTimeWorkoutModel();
 		int position = intent.getIntExtra("position",0);

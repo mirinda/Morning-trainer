@@ -40,7 +40,7 @@ public class WorkoutDrillsActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.enter_drill);
 		Intent intent =getIntent();
-		results = (Results) intent.getSerializableExtra("results");
+		results = TrainerApplication.getResults();
 		type = intent.getIntExtra("type",Main.NAMES_WORKOUT);
 		if(type==Main.NAMES_WORKOUT){
 			int i = intent.getIntExtra("workout_model",0);

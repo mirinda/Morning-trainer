@@ -59,7 +59,7 @@ public class ResultsActivity extends ListActivity implements View.OnClickListene
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		Intent intent = getIntent();
-		results = (Results) intent.getSerializableExtra("results");
+		results = TrainerApplication.getResults();
 		setMyContextView();
 		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, results.getOneTimeWorkoutModel().doDrillModelList());
 		setListAdapter(arrayAdapter);

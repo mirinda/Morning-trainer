@@ -21,7 +21,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ea6a9c0-922d-4a03-952e-d5b7df6c07da" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/TrainerApplication.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/implement/Workout.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/all_drills.xml" afterPath="$PROJECT_DIR$/res/layout/all_drills.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsActivity.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllWorkoutsActivity.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/AllWorkoutsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/Main.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsActivity.java" afterPath="$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsActivity.java" />
     </list>
     <ignored path="Morning-trainer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -91,8 +101,8 @@
       <property name="field_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -100,7 +110,109 @@
     <favorites_list name="Morning-trainer" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="all_drills.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/all_drills.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="41" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllDrillsActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="45" selection-start="3020" selection-end="3020" vertical-scroll-proportion="-5.2">
+              <folding>
+                <element signature="docComment;class#AllDrillsActivity#0" expanded="false" />
+                <element signature="class#MyDialogListener#0;class#AllDrillsActivity#0" expanded="false" />
+                <element signature="method#MyDialogListener#0;class#MyDialogListener#0;class#AllDrillsActivity#0" expanded="false" />
+                <element signature="method#onClick#0;class#MyDialogListener#0;class#AllDrillsActivity#0" expanded="false" />
+                <element signature="method#doDrillModelList#0;class#AllDrillsActivity#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllWorkoutsActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllWorkoutsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="58" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllDrillsOfDrillmodelActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="85" column="25" selection-start="2868" selection-end="2871" vertical-scroll-proportion="-7.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultsActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="18" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WorkoutDrillsActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="62" selection-start="1320" selection-end="1320" vertical-scroll-proportion="-7.866667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="73" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.796334">
+              <folding>
+                <element signature="docComment;class#Main#0" expanded="false" />
+                <element signature="method#onCreate#0;class#Main#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="55" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainerApplication.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/TrainerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="110" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrawView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/draw/DrawView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -120,25 +232,32 @@
   <component name="GitLogSettings">
     <option name="myStructureFilterPaths" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="expandStates">
+      <map>
+        <entry key="Morning-trainer" value="true" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/Main.java" />
-        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/impl/Workout.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/all_drills_of_drillmodel.xml" />
-        <option value="$PROJECT_DIR$/res/layout/all_drills.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/layout/alert_new_drill.xml" />
         <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/impl/Results.java" />
         <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsAdapter.java" />
-        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/all_drills_row.xml" />
-        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/all_drills_of_drillmodel_row.xml" />
-        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java" />
         <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/impl/WorkoutModel.java" />
         <option value="$PROJECT_DIR$/res/layout/enter_drill_row.xml" />
+        <option value="$PROJECT_DIR$/res/layout/all_drills.xml" />
+        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/implement/Workout.java" />
+        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/TrainerApplication.java" />
+        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java" />
+        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java" />
+        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsActivity.java" />
+        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsActivity.java" />
+        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/AllWorkoutsActivity.java" />
+        <option value="$PROJECT_DIR$/src/kz/mirinda/trainer/Main.java" />
       </list>
     </option>
   </component>
@@ -454,6 +573,7 @@
           </PATH>
         </subPane>
         <subPane subId="Problems" />
+        <subPane subId="Tests" />
         <subPane subId="Production">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -462,7 +582,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-        <subPane subId="Tests" />
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -512,6 +631,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Morning-trainer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Morning-trainer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -529,13 +658,16 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="kz.mirinda.trainer.impl" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kz.mirinda.trainer.implement" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Users\make\IdeaProjects\Morning-trainer\res\layout" />
@@ -622,6 +754,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" value="kz.mirinda.trainer.kz.mirinda.trainer.impl.Workout" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="file://$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -647,24 +797,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" value="kz.mirinda.trainer.kz.mirinda.trainer.impl.Workout" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="file://$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -806,7 +938,11 @@
       <created>1338206672125</created>
       <updated>1338206672125</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="nothing">
+      <created>1338915000359</created>
+      <updated>1338915000359</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -833,28 +969,28 @@
     <frame x="-4" y="-4" width="1688" height="1025" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3552941" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.38836104" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3552941" sideWeight="0.0" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923833" sideWeight="0.38836104" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.38836104" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39904988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42755345" sideWeight="0.50061727" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.21852732" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705882" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52705884" sideWeight="0.49506173" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32779098" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705882" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962963" sideWeight="0.6710214" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.6900238" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20577395" sideWeight="0.6447059" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32923833" sideWeight="0.6710214" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39987716" sideWeight="0.6900238" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20577395" sideWeight="0.6447059" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2482353" sideWeight="0.49506173" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3181818" sideWeight="0.6447059" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3181818" sideWeight="0.6447059" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32705882" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Android Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6710214" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6710214" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Android Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2375297" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
@@ -896,7 +1032,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлена возможность добавлять упражнения и просматривать число сделанных упражнений" />
+    <option name="LAST_COMMIT_MESSAGE" value="nothing" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -925,6 +1061,7 @@
     <MESSAGE value="activity - list of all drills.Осталось связать некоторые кнопочки, и доделать Results" />
     <MESSAGE value="Нормально выглядит графическая либа" />
     <MESSAGE value="добавлена возможность добавлять упражнения и просматривать число сделанных упражнений" />
+    <MESSAGE value="nothing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -934,86 +1071,142 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/Program Files/Android/android-sdk-windows/platforms/android-10/android.jar!/android/widget/ArrayAdapter.class">
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="16" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.33274338" />
+        <state line="120" column="19" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.21083172" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/all_drills.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="460" selection-end="460" vertical-scroll-proportion="-0.39273357" />
+        <state line="18" column="41" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/impl/Results.java">
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/implement/Workout.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="9" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="49" selection-start="1659" selection-end="1659" vertical-scroll-proportion="0.23959647" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="55" selection-start="1555" selection-end="1555" vertical-scroll-proportion="0.18333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="66" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.021437578" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/all_drills_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="15" selection-start="640" selection-end="640" vertical-scroll-proportion="0.3001261" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/all_drills_of_drillmodel_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="48" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllWorkoutsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="60" selection-start="1198" selection-end="1198" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/enter_drill_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="390" selection-end="390" vertical-scroll-proportion="0.32903227" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/all_workouts_row.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="40" selection-start="484" selection-end="484" vertical-scroll-proportion="0.54214126" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/all_workouts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="18" column="18" selection-start="361" selection-end="361" vertical-scroll-proportion="0.14529915">
+          <folding>
+            <element signature="docComment;class#Workout#0" expanded="false" />
+            <element signature="method#Workout#0;class#Workout#0" expanded="false" />
+            <element signature="method#getDrills#0;class#Workout#0" expanded="false" />
+            <element signature="method#setDrills#0;class#Workout#0" expanded="false" />
+            <element signature="method#getDate#0;class#Workout#0" expanded="false" />
+            <element signature="method#setDate#0;class#Workout#0" expanded="false" />
+            <element signature="method#getDrill#0;class#Workout#0" expanded="false" />
+            <element signature="method#add#0;class#Workout#0" expanded="false" />
+            <element signature="method#add#1;class#Workout#0" expanded="false" />
+            <element signature="method#toString#0;class#Workout#0" expanded="false" />
+            <element signature="method#findDrill#0;class#Workout#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/impl/WorkoutModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="59" selection-start="3308" selection-end="3308" vertical-scroll-proportion="0.2729124">
+        <state line="124" column="59" selection-start="3308" selection-end="3308" vertical-scroll-proportion="2.4908426">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/impl/Workout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="221" selection-end="221" vertical-scroll-proportion="0.18681319">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/impl/Results.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="210" selection-end="210" vertical-scroll-proportion="0.16605617">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/saver/Saver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="39" selection-start="481" selection-end="481" vertical-scroll-proportion="0.26984128">
+          <folding>
+            <element signature="docComment;class#Saver#0" expanded="false" />
+            <element signature="method#getUser#0;class#Saver#0" expanded="false" />
+            <element signature="method#setUser#0;class#Saver#0" expanded="false" />
+            <element signature="method#saveResults#0;class#Saver#0" expanded="false" />
+            <element signature="method#initResults#0;class#Saver#0" expanded="false" />
+            <element signature="e#1252#1274#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/draw/DrawView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="243" selection-end="243" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/TrainerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="110" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="55" selection-start="436" selection-end="436" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/ResultsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="59" selection-start="788" selection-end="788" vertical-scroll-proportion="0.032882012" />
+        <state line="61" column="18" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/WorkoutDrillsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="19" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.21083172" />
+        <state line="45" column="62" selection-start="1320" selection-end="1320" vertical-scroll-proportion="-7.866667">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsOfDrillmodelActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="62" selection-start="1069" selection-end="1069" vertical-scroll-proportion="0.032882012" />
+        <state line="85" column="25" selection-start="2868" selection-end="2871" vertical-scroll-proportion="-7.6">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllDrillsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="45" selection-start="3020" selection-end="3020" vertical-scroll-proportion="-5.2">
+          <folding>
+            <element signature="docComment;class#AllDrillsActivity#0" expanded="false" />
+            <element signature="class#MyDialogListener#0;class#AllDrillsActivity#0" expanded="false" />
+            <element signature="method#MyDialogListener#0;class#MyDialogListener#0;class#AllDrillsActivity#0" expanded="false" />
+            <element signature="method#onClick#0;class#MyDialogListener#0;class#AllDrillsActivity#0" expanded="false" />
+            <element signature="method#doDrillModelList#0;class#AllDrillsActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/AllWorkoutsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="58" selection-start="1623" selection-end="1623" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/mirinda/trainer/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="73" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.796334">
+          <folding>
+            <element signature="docComment;class#Main#0" expanded="false" />
+            <element signature="method#onCreate#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
