@@ -1,10 +1,7 @@
 package kz.mirinda.trainer.impl;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * new class
@@ -15,6 +12,7 @@ public class WorkoutModel implements Serializable {
 	private List<Workout> workouts = new ArrayList<Workout>();
 	private List<DrillModel> drillModels = new ArrayList<DrillModel>();
 	private String workoutName;
+
 
 	public class DrillContainer implements Comparable<DrillContainer>{
 		public long date;
@@ -31,7 +29,7 @@ public class WorkoutModel implements Serializable {
 		}
 	}
 	public class AllInfDrillContainer extends DrillContainer{
-		public String workoutModelName;
+		//public String workoutModelName;
 		public String drillName;
 	}
 	public WorkoutModel(){}
@@ -134,6 +132,44 @@ public class WorkoutModel implements Serializable {
 		}
 		return drillContainers;
 	}
+	public List<Date> getAllDays(){
+	 	List<Date> days = new LinkedList<Date>();
 
-
+		for (Workout workout : workouts) {
+			Date date = workout.getDate();
+			boolean flag=true;
+			for (Date day : days) {
+				if(isDatesInDay(day,date)){
+					flag=false;
+					break;
+				}
+			}
+			if(flag){
+				days.add(date);
+			}
+		}
+		return  days;
+	}
+	boolean isDatesInDay(Date date1,Date date2){
+		//noinspection RedundantIfStatement
+		if(date1.getYear()==date2.getYear()&&date1.getMonth()==date2.getMonth()&&date1.getDay()==date2.getDay()){
+			return true;
+		}
+		return false;
+	}
+	public List<AllInfDrillContainer> getDayDrills(Date day){
+		List<AllInfDrillContainer> drillContainers =new LinkedList<AllInfDrillContainer>();
+		for (Workout workout : workouts) {
+			if(isDatesInDay(day,workout.getDate())){
+				for (Drill  drill: workout.getDrills()) {
+					AllInfDrillContainer container = new AllInfDrillContainer();
+					container.drillName = drill.getDrillName();
+					container.date = workout.getDate().getTime();
+					container.count= drill.getNumbers().get(0);
+					drillContainers.add(container);
+				}
+			}
+		}
+		return drillContainers;
+	}
 }

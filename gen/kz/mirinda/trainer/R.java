@@ -20,6 +20,7 @@ public final class R {
         public static final int text_color=0x7f070003;
     }
     public static final class dimen {
+        public static final int row_size=0x7f060001;
         public static final int text_size=0x7f060000;
     }
     public static final class drawable {
@@ -55,6 +56,7 @@ public final class R {
         public static final int result=0x7f08001a;
         public static final int squat_edit=0x7f080017;
         public static final int squat_submit=0x7f080018;
+        public static final int text=0x7f08001c;
         public static final int train=0x7f080019;
         public static final int wlabel=0x7f08000d;
     }
@@ -71,6 +73,10 @@ public final class R {
         public static final int main=0x7f030009;
         public static final int main1=0x7f03000a;
         public static final int results=0x7f03000b;
+        public static final int tab_result=0x7f03000c;
+        public static final int time_r_child_row=0x7f03000d;
+        public static final int time_r_group_row=0x7f03000e;
+        public static final int time_results=0x7f03000f;
     }
     public static final class string {
         public static final int all=0x7f05000a;
@@ -85,6 +91,8 @@ public final class R {
         public static final int now=0x7f050007;
         public static final int result=0x7f050004;
         public static final int submit=0x7f050002;
+        public static final int tab_r_drill_tab=0x7f05000d;
+        public static final int tab_r_time_tab=0x7f05000e;
         public static final int train=0x7f050003;
     }
 }

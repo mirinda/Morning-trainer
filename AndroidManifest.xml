@@ -31,5 +31,11 @@
                   android:theme="@android:style/Theme.Black.NoTitleBar"
                   android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".AllDrillsOfDrillmodelActivity"/>
+        <activity android:name=".TabResultActivity"
+                  android:configChanges="orientation"
+                  android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name=".TimeResultsActivity"
+                  android:configChanges="orientation"
+                  android:theme="@android:style/Theme.Black.NoTitleBar"/>
     </application>
 </manifest> 

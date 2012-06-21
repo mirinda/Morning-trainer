@@ -13,10 +13,13 @@
     <string name="all">All:</string>
     <string name="enter_drill_name">Enter drill name:</string>
     <string name="create_drill">Create drill</string>
+    <string name="tab_r_drill_tab">Drill</string>
+    <string name="tab_r_time_tab">Time</string>
 
 
 
     <dimen name="text_size">23dip</dimen>
+    <dimen name="row_size">80dp</dimen>
 
     <color name= "morning_color">#FFA000</color>
     <color name= "orange">#FFA000</color>

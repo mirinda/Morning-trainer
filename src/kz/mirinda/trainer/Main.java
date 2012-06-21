@@ -53,7 +53,7 @@ public class Main extends Activity implements OnClickListener{
 			//finish();
 		} else if(view.getId()==R.id.result){
 			Intent intent = new Intent();
-			intent.setClass(this,ResultsActivity.class);
+			intent.setClass(this,TabResultActivity.class);
 			startActivity(intent);
 			//finish();
 

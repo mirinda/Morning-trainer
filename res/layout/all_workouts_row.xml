@@ -10,7 +10,6 @@
             android:id="@+id/wlabel"
             android:layout_width="fill_parent"
             android:layout_height="80dp"
-            android:layout_weight="14"
             android:textSize="30dp"
             android:gravity="center">
     </TextView>

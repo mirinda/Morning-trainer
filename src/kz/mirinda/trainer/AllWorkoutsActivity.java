@@ -3,6 +3,7 @@ package kz.mirinda.trainer;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
@@ -23,16 +24,18 @@ public class AllWorkoutsActivity extends ListActivity implements Button.OnClickL
 	 Results results;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
+		Log.i("mirinda1", "TimeResultsActivity create");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.all_workouts);
 		Button  button = (Button) findViewById(R.id.aw_button);
 		button.setOnClickListener(this);
-		results =(Results) getIntent().getSerializableExtra("results");
+		results =TrainerApplication.getResults();
 		List<String> objects= doWorkoutModelList(results);
 		AllWorkoutsAdapter workoutAdapter = new AllWorkoutsAdapter(this,R.layout.all_workouts_row,R.id.wlabel, objects);
 		setListAdapter(workoutAdapter);
 	}
 	private List<String> doWorkoutModelList(Results results){
+		if(results==null) return new ArrayList<String>();
 		List<String> strings = new ArrayList<String>(results.getWorkoutModels().size());
 		for (WorkoutModel next : results.getWorkoutModels()) {
 			strings.add(next.getWorkoutName());
